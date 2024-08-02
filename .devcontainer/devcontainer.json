@@ -1,0 +1,4 @@
+{
+  "postCreateCommand": "curl -fsSL https://bun.sh/install | bash && source ~/.bashrc && bun install && npm install -g @antfu/ni xhinobi && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install && curl -L -o ~/fd.deb https://github.com/sharkdp/fd/releases/download/v8.7.1/fd-musl_8.7.1_amd64.deb && sudo dpkg -i ~/fd.deb && echo \"alias fac='fd --type f --exclude node_modules,dist | fzf -m | xhinobi'\" >> ~/.bashrc && source ~/.bashrc",
+  "postStartCommand": "bun run dev"
+}
